@@ -76,6 +76,37 @@ namespace Shapes
             //Console.WriteLine(Math.Min(4, 9));
             //Console.WriteLine(Math.Round(4.457619));
 
+            //// Example 6
+            //// getting input from use
+            //Console.Write("Enter your name: "); // write vs write line (write does NOT creat a new line)
+            //string userName = Console.ReadLine();
+            //Console.Write("Enter your Age: "); // write vs write line (write does NOT creat a new line)
+            //string userAge = Console.ReadLine();
+            //Console.WriteLine("Hey, " + userName + "!");
+            //Console.WriteLine("You are "  + userAge + "!");
+
+            //// Example 7: Calculator
+            //int num = Convert.ToInt32("45");
+            //Console.Write("Enter Number: ");
+            //int numberOne = Convert.ToInt32(Console.ReadLine());
+
+            //Console.Write("Enter Anothr Nnumber: ");
+            //int numberTwo = Convert.ToInt32(Console.ReadLine());
+
+            //int total = numberOne + numberTwo;
+            //Console.WriteLine("Total: " +  total);
+
+            //// Example 8
+            //string color, pluralNoun, celebrity;
+            //Console.Write("Enter a color: ");
+            //color = Console.ReadLine();
+            //Console.Write("Enter a plural noun: ");
+            //pluralNoun = Console.ReadLine();
+            //Console.Write("Enter a celebrity: ");
+            //celebrity = Console.ReadLine();
+            //Console.WriteLine("Roses are " + color);
+            //Console.WriteLine(pluralNoun  + " are " + color);
+            //Console.WriteLine("I love " + celebrity);
         }
     }
 }
