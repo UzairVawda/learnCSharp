@@ -169,10 +169,10 @@ namespace Shapes
 
         static int GetMax(int numOne, int numTwo, int numThree)
         {
-            if (numOne > numTwo && numOne > numThree)
+            if (numOne >= numTwo && numOne >= numThree)
             {
                 return numOne;
-            } else if  (numTwo > numOne && numTwo > numThree)
+            } else if  (numTwo >= numOne && numTwo >= numThree)
             {
                 return numTwo;
             } else
