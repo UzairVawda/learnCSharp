@@ -41,19 +41,50 @@ namespace Shapes
             //Console.WriteLine(GetDay(4));
             //Console.WriteLine(GetDay(80));
 
-            int index = 1;
-            while(index <= 5)
-            {
-                Console.WriteLine(index);
-                index++;
-            }
+            //int index = 1;
+            //while(index <= 5)
+            //{
+            //    Console.WriteLine(index);
+            //    index++;
+            //}
 
-            //excutes once before checking condition
-            do
-            {
-                Console.WriteLine(index);
-                index--;
-            } while (index <= 5) ;
+            ////excutes once before checking condition
+            //do
+            //{
+            //    Console.WriteLine(index);
+            //    index++;
+            //} while (index <= 5) ;
+
+            //string secretWord = "switch";
+            //string guess = "";
+            //int numOfGuess = 1;
+            //int guessLimit = 4;
+            //bool canGuess = true;
+
+            //do
+            //{
+            //    if (numOfGuess < guessLimit)
+            //    {
+            //        Console.Write("Guess # " + numOfGuess + ": ");
+            //        guess = Console.ReadLine();
+            //        numOfGuess++;
+            //    }
+            //    else
+            //    {
+            //        canGuess = false;
+            //    }
+            //} while (guess != secretWord && canGuess);
+
+            //if (!canGuess)
+            //{
+            //    Console.WriteLine("You Lose!");
+            //} else
+            //{
+            //    Console.WriteLine("Guess was Correct!");
+            //}
+
+
+
         }
 
         static string GetDay(int dayNum)
