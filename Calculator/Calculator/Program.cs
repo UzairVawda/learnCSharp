@@ -83,8 +83,44 @@ namespace Shapes
             //    Console.WriteLine("Guess was Correct!");
             //}
 
+            //int[] luckyNums = {4,6,15,79,1};
+            //for (int i = 0; i<luckyNums.Length; i++)
+            //{
+            //    Console.WriteLine(luckyNums[i]);
+            //}
+
+            //Console.WriteLine(Power(2, 3));
 
 
+            // 2D Arrays
+            int[,] numberGrid =
+            {
+                {1,2,3},
+                {4,5,6},
+                {7,8,9}
+            };
+            //Console.WriteLine(numberGrid[0, 0]);
+            //Console.WriteLine(numberGrid[2, 2]);
+            //Console.WriteLine(numberGrid[1, 1]);
+
+            try
+            {
+                Console.Write("Enter a number: ");
+                int numOne = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Enter another number: ");
+                int numTwo = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine(numOne / numTwo);
+            } catch(DivideByZeroException error)
+            {
+                Console.WriteLine(error.Message);
+            } catch (FormatException error)
+            {
+                Console.WriteLine(error.Message);
+            } finally
+            {
+                Console.WriteLine("Done");
+            }
         }
 
         static string GetDay(int dayNum)
@@ -119,6 +155,18 @@ namespace Shapes
                     break;
             }
             return dayName;
+        }
+
+        static int Power(int baseNum, int expoNum)
+        {
+            int res = 1;
+
+            for (int i = 0; i<expoNum; i++)
+            {
+                res = res * baseNum;
+            }
+
+            return res;
         }
     }
 }
