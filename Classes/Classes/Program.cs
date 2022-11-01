@@ -24,8 +24,13 @@ namespace Classes
             Movie movieOne = new Movie("Jane Doe", "CS", "PG");
             Movie movieTwo = new Movie("John Doe", "ENG", "Dog");
             // G, PG, PG-13, R, NR
-            Console.WriteLine(movieOne.Rating);
-            Console.WriteLine(movieTwo.Rating);
+            //Console.WriteLine(movieOne.Rating);
+            //Console.WriteLine(movieTwo.Rating);
+
+            Song songOne = new Song("Jane Doe", "CS", 100);
+            Song songTwo = new Song("John Doe", "ENG", 50);
+            // G, PG, PG-13, R, NR
+            Console.WriteLine(Song.songCount);
         }
     }
 }
