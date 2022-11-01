@@ -30,7 +30,17 @@ namespace Classes
             Song songOne = new Song("Jane Doe", "CS", 100);
             Song songTwo = new Song("John Doe", "ENG", 50);
             // G, PG, PG-13, R, NR
-            Console.WriteLine(Song.songCount);
+            //Console.WriteLine(Song.songCount);
+
+            MathTools.SayHi("Uzair");
+
+            Chef chefOne = new Chef();
+            chefOne.MakeSandwich();
+            chefOne.MakeSpecialDish();
+
+            IndianChef indianChef = new IndianChef();
+            indianChef.MakeSalad();
+            indianChef.MakeSpecialDish();
         }
     }
 }
