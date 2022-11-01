@@ -107,6 +107,23 @@ namespace Shapes
             //Console.WriteLine("Roses are " + color);
             //Console.WriteLine(pluralNoun  + " are " + color);
             //Console.WriteLine("I love " + celebrity);
+
+            //// Example 9 -> Arrays
+            //int[] luckyNum = { 4, 8, 15, 4 };
+            //Console.WriteLine(luckyNum[1]);
+
+            //string[] friends = new string[5];
+            //friends[0] = "Uzair";
+            //friends[1] = "Nike";
+
+            SayHello("Uzair", 32); // function call
+        }
+
+        static void SayHello(string name, int age) //void because it doesnt return anything
+        {
+            Console.WriteLine("Hello User");
+            Console.WriteLine("Hello " + name + "!");
+            Console.WriteLine("You are " + age);
         }
     }
 }
