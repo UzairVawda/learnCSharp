@@ -116,7 +116,43 @@ namespace Shapes
             //friends[0] = "Uzair";
             //friends[1] = "Nike";
 
-            SayHello("Uzair", 32); // function call
+            //// Example 10/11 -> function and return type
+            //SayHello("Uzair", 32); // function call
+            //Console.Write(CudeNum(3));
+
+            //int cube = CudeNum(5);
+            //Console.Write(cube);
+
+            //// Example 12 -> If statement
+            //bool isMale = true;
+            //bool isTall = false;
+
+            //if (isMale && isTall) // && and, || or, 
+            //{
+            //    Console.WriteLine("You are a male!");
+            //    Console.WriteLine("You are tall!");
+            //} else if (isMale && !isTall)
+            //{
+            //    Console.WriteLine("You are male!");
+            //    Console.WriteLine("You are not tall!");
+            //} else if (!isMale && isTall)
+            //{
+            //    Console.WriteLine("You are not male!");
+            //    Console.WriteLine("You are tall!");
+            //} else
+            //{
+            //    Console.WriteLine("You not male and not tall!");
+            //}
+
+            int maxOne = GetMax(5, 10, 6);
+            Console.WriteLine(maxOne);
+
+            int maxTwo = GetMax(25, 11, 4);
+            Console.WriteLine(maxTwo);
+
+            int maxThree = GetMax(2, 11, 4);
+            Console.WriteLine(maxThree);
+
         }
 
         static void SayHello(string name, int age) //void because it doesnt return anything
@@ -124,6 +160,25 @@ namespace Shapes
             Console.WriteLine("Hello User");
             Console.WriteLine("Hello " + name + "!");
             Console.WriteLine("You are " + age);
+        }
+
+        static int CudeNum(int num) // instead of void, int becuase thats what we expect back
+        {
+            return num * num * num;
+        }
+
+        static int GetMax(int numOne, int numTwo, int numThree)
+        {
+            if (numOne > numTwo && numOne > numThree)
+            {
+                return numOne;
+            } else if  (numTwo > numOne && numTwo > numThree)
+            {
+                return numTwo;
+            } else
+            {
+                return numThree;
+            }
         }
     }
 }
