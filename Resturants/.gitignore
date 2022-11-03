@@ -1,0 +1,21 @@
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+# Local History for Visual Studio Code
+.history/
+
+.vs/
+
+#res ignore
+Res/bin
+Res/obj
+Res/packages
+
+#res core ignore
+ResCore/bin
+ResCore/obj
+ResCore/packages
